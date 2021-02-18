@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.cover {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-2 {
+  background-image: url("img/bg-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.close-btn a {
+  font-size: 15pt;
+  color: #6f6aff;
+  transition: ease-in 0.1s;
+  position: absolute;
+  left: 10px;
+}
+
+.close-btn a:hover {
+  color: #9591ff;
+  transition: ease-in 0.1s;
+}
+
+.velta {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .velta {
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 1024px) {
+  .velta {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.noto3 {
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noto3 input {
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.math ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+.math ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+.math ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+.math li ol > li {
+  margin: 0;
+}
+
+.math li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+/* Profile Setup */
+.profile-tab {
+  background-color: #6f6aff;
+}
+
+.border-stroke {
+  border: solid 2px #fff !important;
+}
+
+.m-size {
+  font-size: 14pt;
+}
+
+.number {
+  margin-left: 10px;
+  text-decoration: none;
+  color: rgb(141, 141, 141);
+}
+
+.number :hover {
+  color: rgb(100, 100, 100);
+}
+
+.space {
+  padding-right: 10px;
+}
+
+.lookup {
+  margin-right: 10px;
+  width: 40%;
+  background-color: #48ff94;
+  border: none;
+  color: #1c2147;
+  font-weight: bolder;
+  font-size: 13pt;
+}
+
+.lookup:hover {
+  margin-right: 10px;
+  width: 40%;
+  background-color: #a1ffc8;
+  border: none;
+  color: #1c2147;
+  font-weight: bolder;
+  font-size: 13pt;
+}
+
+.publish {
+  width: 40%;
+  background-color: #586bff;
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 13pt;
+}
+.publish:hover {
+  width: 40%;
+  background-color: #929fff;
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 13pt;
+}
+
+.nfv {
+  background-color: rgb(235, 235, 235);
+}
+
+.publish-2 {
+  background-color: #586bff;
+  border: none;
+  color: #ffffff;
+  padding: 0px;
+}
+.publish-2:hover {
+  background-color: #929fff;
+  border: none;
+  color: #ffffff;
+  padding: 0px;
+}
+
+.wander {
+  width: 60px;
+}
+
+.privacidad {
+  background: rgb(255, 111, 86);
+  background: linear-gradient(
+    40deg,
+    rgba(255, 111, 86, 1) 0%,
+    rgba(255, 125, 102, 1) 100%
+  );
+}
+
+.verificacion {
+  background: rgb(127, 120, 255);
+  background: linear-gradient(
+    40deg,
+    rgba(127, 120, 255, 1) 0%,
+    rgba(102, 118, 255, 1) 100%
+  );
+}
+
+.asesoria {
+  background: rgb(120, 255, 179);
+  background: linear-gradient(
+    40deg,
+    rgba(120, 255, 179, 1) 0%,
+    rgba(102, 255, 132, 1) 100%
+  );
+}
+
+.uhaus {
+  background: transparent;
+  border: 0px;
+}
+
+.b-size {
+  font-size: 18pt;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
